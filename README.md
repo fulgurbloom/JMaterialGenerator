@@ -1,0 +1,2 @@
+# ZMG
+ZeldaMaterialGenerator
