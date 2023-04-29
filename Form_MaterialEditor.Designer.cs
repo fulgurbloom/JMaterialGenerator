@@ -1,4 +1,4 @@
-﻿namespace ZeldaMaterialGenerator
+﻿namespace JMaterialGenerator
 {
     partial class Form_MaterialEditor
     {
@@ -108,7 +108,7 @@
             // LoadedModelLabel
             // 
             this.LoadedModelLabel.AutoSize = true;
-            this.LoadedModelLabel.Location = new System.Drawing.Point(12, 9);
+            this.LoadedModelLabel.Location = new System.Drawing.Point(12, 12);
             this.LoadedModelLabel.Name = "LoadedModelLabel";
             this.LoadedModelLabel.Size = new System.Drawing.Size(83, 15);
             this.LoadedModelLabel.TabIndex = 2;
@@ -506,7 +506,9 @@
             // 
             this.MaterialSetting_Dropdown_Preset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MaterialSetting_Dropdown_Preset.FormattingEnabled = true;
-            this.MaterialSetting_Dropdown_Preset.Location = new System.Drawing.Point(3, 3);
+            this.MaterialSetting_Dropdown_Preset.Items.AddRange(new object[] {
+            "Preset List"});
+            this.MaterialSetting_Dropdown_Preset.Location = new System.Drawing.Point(3, 6);
             this.MaterialSetting_Dropdown_Preset.Name = "MaterialSetting_Dropdown_Preset";
             this.MaterialSetting_Dropdown_Preset.Size = new System.Drawing.Size(117, 23);
             this.MaterialSetting_Dropdown_Preset.TabIndex = 39;
@@ -525,7 +527,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 458);
+            this.ClientSize = new System.Drawing.Size(677, 460);
             this.Controls.Add(this.SelectedTextureLabel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label17);
@@ -536,7 +538,7 @@
             this.Controls.Add(this.Button_LoadModel);
             this.Controls.Add(this.MaterialListBox);
             this.Name = "Form_MaterialEditor";
-            this.Text = "Zelda Material Generator";
+            this.Text = "JMaterialGenerator";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TextureSetting_NumericUpDown_LodBias)).EndInit();

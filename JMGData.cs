@@ -1,8 +1,8 @@
-﻿namespace ZeldaMaterialGenerator
+﻿namespace JMaterialGenerator
 {
     using static TextureData;
 
-    public class ZMGData
+    public class JMGData
     {
         public enum Game { TWW, TP }
 

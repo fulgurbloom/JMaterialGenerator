@@ -7,7 +7,7 @@ Material presets should be placed in this manner:
 
 ```bash
 Root
-├── ZeldaMaterialGenerator.exe
+├── JMaterialGenerator.exe
 └── Presets
     ├── TwilightPrincess
     │   ├── Preset1.mat
@@ -23,8 +23,10 @@ This was initially created with Twilight Princess in mind, however there is like
 ### To-Do List:
 
 ##### Features:
+* Re-organize form to allow for more required settings (multiple textures, per-game settings, etc.)
 * Implement capability to edit & apply multiple textures on a single material (replace SelectedTextureLabel with a combo box?)
 
 ##### Bugs / adjustments:
 * Make sure texture information is properly written to exported texture header file
 * Remove material name garbage from SelectedTextureLabel
+* Remove "Presets/" prefix from material presets combo box

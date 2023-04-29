@@ -1,4 +1,4 @@
-﻿namespace ZeldaMaterialGenerator
+﻿namespace JMaterialGenerator
 {
     /// <summary>
     /// Thank you SuperBMD

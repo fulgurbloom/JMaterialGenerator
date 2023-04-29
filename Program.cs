@@ -1,4 +1,4 @@
-namespace ZeldaMaterialGenerator
+namespace JMaterialGenerator
 {
     internal static class Program
     {

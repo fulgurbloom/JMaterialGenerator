@@ -1,8 +1,8 @@
 ﻿using System.Xml;
 
-namespace ZeldaMaterialGenerator
+namespace JMaterialGenerator
 {
-    using static ZMGData;
+    using static JMGData;
     using static TextureData;
 
     internal class MaterialLoader

@@ -1,6 +1,6 @@
-﻿namespace ZeldaMaterialGenerator
+﻿namespace JMaterialGenerator
 {
-    using static ZMGData;
+    using static JMGData;
 
     internal class MaterialGenerator
     {

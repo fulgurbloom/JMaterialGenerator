@@ -1,6 +1,6 @@
-namespace ZeldaMaterialGenerator
+namespace JMaterialGenerator
 {
-    using static ZMGData;
+    using static JMGData;
     using static TextureData;
 
     public partial class Form_MaterialEditor : Form
