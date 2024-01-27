@@ -175,9 +175,9 @@ namespace JMaterialGenerator
 
             if (loadedMaterials.Length > 0)
             {
-                for (int i = 0; i < loadedMaterials.Length; i++)
+                foreach (Material m in loadedMaterials)
                 {
-                    MaterialListBox.Items.Add(loadedMaterials[i].materialName);
+                    MaterialListBox.Items.Add(m.materialName);
                 }
 
                 // Setup UI

@@ -23,24 +23,22 @@ namespace JMaterialGenerator
             collada.Load(colladaPath);
 
             XmlNodeList materialNodes = collada.GetElementsByTagName("effect");
-            Material[] materials = new Material[materialNodes.Count];
+            Material[] materials = Array.Empty<Material>();
 
-            for (int i = 0; i < materialNodes.Count; i++)
+            foreach (XmlNode node in materialNodes)
             {
-                // Setup material
-                Material material = new();
-                material.materialName = RemoveMaterialSuffix(materialNodes[i].Attributes[0].InnerText);
-                material.materialPreset = 0;
-
                 // Setup texture
                 Texture texture = CreateBaseTexture();
                 // TODO: Find better node method, this is pathetic
-                texture.Name = FixTextureNameExtension(materialNodes[i].FirstChild.FirstChild.FirstChild.FirstChild.InnerText);
+                texture.Name = FixTextureNameExtension(node.FirstChild.FirstChild.FirstChild.FirstChild.InnerText);
 
-                // Finish material setup
-                material.materialPreset = 0;
-                material.texture = texture;
-                materials[i] = material;
+                // Setup material
+                materials.Append(new Material()
+                {
+                    materialName = RemoveMaterialSuffix(node.Attributes[0].InnerText),
+                    materialPreset = 0,
+                    texture = texture
+                });
             }
 
             return materials;
